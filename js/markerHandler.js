@@ -6,7 +6,7 @@ AFRAME.registerComponent("markerhandler", {
             
         })
 
-        this.el.aaddEventListener("markerLost",()=>{
+        this.el.addEventListener("markerLost",()=>{
             console.log("marker is not found")
             this.handleMarkerLost()
 
